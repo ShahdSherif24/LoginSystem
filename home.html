@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme='dark' class="colorr">
+    <div class="container d-block" id="Card">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <div class="inner shadow-lg my-5 p-4">
+                    <h1 class="text-center text-info p-4">Smart Login System</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="form-floating mb-3 d-none" id="Name">
+                                <input type='text' class="form-control d-block custom-outline colorr"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control custom-outline colorr" id="Email"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Enter your Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control custom-outline colorr" id="Password"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Enter your password</label>
+                            </div>
+                            <button id="LoginBTN" class="btn d-block btn-outline-info w-100 mb-4">Login</button>
+                            <button id="SignupBTN" class="btn d-none btn-outline-info w-100 mb-4">Register</button>
+                            <p id="HaveNotAcc" class="text-white d-block text-center">Don’t have an account?</p>
+                            <p id="HaveAcc" class="text-white d-none text-center">Already have an account?</p>
+                            <a class="text-white pb-3 d-block text-center" id="asignUp" href="#">Sign Up</a>
+                            <a class="text-white pb-3 d-none text-center" id="asignIn" href="#">Sign In</a>
+                            <p id="InvalidEmail" class="text-danger lead d-none">Invalid email or Password</p>
+                            <p id="EmailExists" class="text-danger lead d-none">Email already exists</p>
+                            <p id="done" class="text-info lead d-none">Saved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container position-relative vh-100 d-none" id="WelcomeCard">
+        <div class="d-flex justify-content-start align-items-start">
+            <button id="logoutBTN" class="btn btn-outline-danger mx-auto mt-5 w-50">Log out</button>
+        </div>
+        <h1 class="text-white position-absolute top-50 start-50 translate-middle">Welcome!</h1>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.colorr{
+    background-color: #24353F;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.custom-outline{
+    border-color: white;
+}
